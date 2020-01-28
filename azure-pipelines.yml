@@ -20,8 +20,8 @@ steps:
     npm run build
   displayName: 'npm install and build'
 
-  - script: 'curl -LJO https://github.com/whitesource/unified-agent-distribution/releases/latest/download/wss-unified-agent.jar'
+- script: 'curl -LJO https://github.com/whitesource/unified-agent-distribution/releases/latest/download/wss-unified-agent.jar'
   displayName: 'Download the latest Unified Agent'
- 
+
 - script: 'java -jar wss-unified-agent.jar -c wss-unified-agent.config'
   displayName: 'Run Unified Agent Scan'
